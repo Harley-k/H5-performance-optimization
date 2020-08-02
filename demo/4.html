@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            console.log('DOMContentLoaded')
+        })
+    </script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap-grid.css" rel="stylesheet">
+    
+    <script>
+        // 如果css 下面还有一个js,则会影响dom 的渲染
+        document.addEventListener('DOMContentLoaded',function(){
+            console.log('DOMContentLoaded')
+        })
+    </script>
+</head>
+<body>
+    <h1>测试</h1>
+</body>
+</html>
